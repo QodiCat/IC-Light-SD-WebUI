@@ -47,4 +47,5 @@ Unlike the FC workflow, the FBC workflow allows us to import a specified backgro
 
 ## 国内用户，可以直接从百度网盘下载整合包
 
-https://pan.baidu.com/s/1kb3rBi3MIG2Dl5b-DSiCyg?pwd=1111 
+链接： https://pan.baidu.com/s/1kb3rBi3MIG2Dl5b-DSiCyg?pwd=1111 
+
