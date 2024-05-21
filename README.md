@@ -19,48 +19,8 @@ If all models right,click "check models" and "check result" will be "All files f
 
 
 Make sure the folder structure like this:
+![1](imgs/6.png)
 
-IC-Light-SD-WebUI
-   │  briarmbg.py
-   │  check_model.py
-   │  get_image.py
-   │  gradio_demo.py
-   │  process_fbc.py
-   │  process_fc.py
-   ├─models
-   │  │  iclight_sd15_fbc.safetensors
-   │  │  iclight_sd15_fc.safetensors
-   │  │
-   │  ├─rmbg
-   │  │      config.json
-   │  │      model.pth
-   │  │      model.safetensors
-   │  │      pytorch_model.bin
-   │  │
-   │  ├─text_encoder
-   │  │      config.json
-   │  │      model.safetensors
-   │  │      pytorch_model.bin
-   │  │
-   │  ├─tokenizer
-   │  │      merges.txt
-   │  │      special_tokens_map.json
-   │  │      tokenizer_config.json
-   │  │      vocab.json
-   │  │
-   │  ├─unet
-   │  │      config.json
-   │  │      diffusion_pytorch_model.bin
-   │  │      diffusion_pytorch_model.safetensors
-   │  │
-   │  └─vae
-   │          config.json
-   │          diffusion_pytorch_model.bin
-   │          diffusion_pytorch_model.safetensors
-   │
-   └─scripts
-
-​          ic_light_extension.py
 
 
 
