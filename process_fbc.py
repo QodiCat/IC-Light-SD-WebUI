@@ -404,7 +404,7 @@ def process(input_fg, input_bg, prompt, image_width, image_height, num_samples, 
     
     numpy_image=pytorch2numpy(pixels)
     img = Image.fromarray(numpy_image[0])
-    output_dir = str(paths.script_path) + "\\outputs\\IC-Light"
+    output_dir = str(paths.script_path) + "/outputs/IC-Light"
     os.makedirs(output_dir, exist_ok=True)
     now = datetime.now()
     timestamp = now.strftime("%Y%m%d_%H%M%S")

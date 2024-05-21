@@ -6,24 +6,63 @@ We know that SD can generate beautiful character and landscape images, so there 
 
 ## Download models
 
-To use it in SD-WebUI,you need download following contents after you put this project under extensions :
+To use it in SD-WebUI,you need download many contents.
 
-models:
+Just click "download model from huggingface" and wait.
 
-* [iclight_sd15_fc.safetensors](https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors?download=true)
+![4](imgs/4.png)
 
-* [iclight_sd15_fbc.safetensors](https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fbc.safetensors?download=true)
+If all models right,click "check models" and "check result" will be "All files found".
 
-* [unet](https://hf-mirror.com/stablediffusionapi/realistic-vision-v51/tree/main/unet)
-* [vae](https://hf-mirror.com/stablediffusionapi/realistic-vision-v51/tree/main/vae)
-* [tokenizer](https://hf-mirror.com/stablediffusionapi/realistic-vision-v51/tree/main/tokenizer)
-* [text_encoder](https://hf-mirror.com/stablediffusionapi/realistic-vision-v51/tree/main/text_encoder)
+![5](imgs/5.png)
 
-* [rmbg](https://huggingface.co/briaai/RMBG-1.4/tree/main)
-  * config.json
-  * model.pth
-  * model.safetensors
-  * pytorch_model.bin
+
+
+Make sure the folder structure like this:
+
+IC-Light-SD-WebUI
+   │  briarmbg.py
+   │  check_model.py
+   │  get_image.py
+   │  gradio_demo.py
+   │  process_fbc.py
+   │  process_fc.py
+   ├─models
+   │  │  iclight_sd15_fbc.safetensors
+   │  │  iclight_sd15_fc.safetensors
+   │  │
+   │  ├─rmbg
+   │  │      config.json
+   │  │      model.pth
+   │  │      model.safetensors
+   │  │      pytorch_model.bin
+   │  │
+   │  ├─text_encoder
+   │  │      config.json
+   │  │      model.safetensors
+   │  │      pytorch_model.bin
+   │  │
+   │  ├─tokenizer
+   │  │      merges.txt
+   │  │      special_tokens_map.json
+   │  │      tokenizer_config.json
+   │  │      vocab.json
+   │  │
+   │  ├─unet
+   │  │      config.json
+   │  │      diffusion_pytorch_model.bin
+   │  │      diffusion_pytorch_model.safetensors
+   │  │
+   │  └─vae
+   │          config.json
+   │          diffusion_pytorch_model.bin
+   │          diffusion_pytorch_model.safetensors
+   │
+   └─scripts
+
+​          ic_light_extension.py
+
+
 
 ## How to use
 
@@ -41,11 +80,14 @@ Unlike the FC workflow, the FBC workflow allows us to import a specified backgro
 
 ![3](imgs/3.png)
 
+## Notice
 
-
-
+* You must click "Use FC"/"Use FBC" first
+* "download from hf-mirror"  can't download iclight_sd15_fc.safetensors and iclight_sd15_fbc.safetensors,you should download it from huggingface
 
 ## 国内用户，可以直接从百度网盘下载整合包
 
 链接： https://pan.baidu.com/s/1kb3rBi3MIG2Dl5b-DSiCyg?pwd=1111 
+
+将整合包解压放在extensions目录下
 
