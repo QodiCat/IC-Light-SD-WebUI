@@ -8,13 +8,27 @@ We know that SD can generate beautiful character and landscape images, so there 
 
 To use it in SD-WebUI,you need download many contents.
 
-Just click "download model from huggingface" and wait.
+download them from following links:
 
-![4](imgs/4.png)
+main models: 
+https://huggingface.co/lllyasviel/ic-light/tree/main
 
-If all models right,click "check models" and "check result" will be "All files found".
+rmbg:  
+ https://huggingface.co/briaai/RMBG-1.4/tree/main
 
-![5](imgs/5.png)
+vae,unet,tokenizer,text_encoder: 
+https://huggingface.co/stablediffusionapi/realistic-vision-v51
+
+国内用户从镜像站下载：
+
+main models: 
+https://hf-mirror.com/lllyasviel/ic-light
+
+rmbg: 
+https://hf-mirror.com/briaai/RMBG-1.4
+
+vae,unet,tokenizer,text_encoder: 
+https://hf-mirror.com/stablediffusionapi/realistic-vision-v51
 
 
 

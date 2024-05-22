@@ -4,8 +4,7 @@ from process_fc import process_relight,change_state1
 from process_fbc import change_state2,process_relight2
 from get_image import get_img_from_txt2img, get_img_from_img2img
 from check_model import check_model_structure
-from check_model import download_model
-from check_model import download_mirror_model
+
 
 class BGSource_1(Enum):
     NONE = "None"
@@ -117,14 +116,10 @@ def iclight_demo(checkpoint_path="checkpoints",config_path="src/config",warpfn=N
         with gr.Tab(label="configuration"):
             with gr.Row():
                 with gr.Column():
-                    check_button = gr.Button(value="check models")
-                    download_button = gr.Button(value="download model from huggingface")
-                    download_mir_button = gr.Button(value="download model from hf-mirror")               
+                    check_button = gr.Button(value="check models")            
                 with gr.Column():
                     check_result = gr.Textbox(label="check result")
                     check_button.click(check_model_structure, inputs=None, outputs=check_result)
-                    download_button.click(download_model, inputs=None, outputs=None)
-                    download_mir_button.click(download_mirror_model, inputs=None, outputs=None)
             
             
             ips2 = [input_fg2, input_bg2, prompt, image_width, image_height, num_samples, seed, steps, a_prompt, n_prompt, cfg, highres_scale, highres_denoise, bg2_source]
