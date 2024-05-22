@@ -45,6 +45,11 @@ Unlike the FC workflow, the FBC workflow allows us to import a specified backgro
 * You must click "Use FC"/"Use FBC" first
 * "download from hf-mirror"  can't download iclight_sd15_fc.safetensors and iclight_sd15_fbc.safetensors,you should download it from huggingface
 
+## common mistakes
+
+* If you use the workflow, you must load a model,else it will cause an error : TypeError: 'NoneType' object is not callable
+  
+
 ## 国内用户，可以直接从百度网盘下载整合包
 
 链接： https://pan.baidu.com/s/1kb3rBi3MIG2Dl5b-DSiCyg?pwd=1111 
